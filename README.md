@@ -42,7 +42,7 @@ Mizan (ميزان, "balance" in Arabic) is a legal assistant that answers questi
 
 ---
 
-### 🏛️ Visioneer: graduation project
+### 🏛️ [Visioneer: graduation project](https://github.com/OmarAmir2001/VISIONEER_APP)
 
 An Android app for creating and visualizing floor plans. With a colleague, I **fine-tuned Stable Diffusion v1.5 twice using Hugging Face PEFT**: once for schematic designs without furniture, and once for furnished layouts, trained on a modified *pseudo-floor-plan-12k* dataset.
 
