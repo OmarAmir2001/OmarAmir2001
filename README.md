@@ -10,54 +10,57 @@ I build LLM agents that know when they're wrong. My work is agentic RAG systems 
 
 ---
 
-## 🚀 Featured projects
+## Projects
 
-### 🎧 [Handbook Assistant: Customer Support Agent](https://github.com/OmarAmir2001/Customer_Support)
+| Project | What it shows | Headline result |
+|---|---|---|
+| [**Handbook Assistant**](https://github.com/OmarAmir2001/Customer_Support) | LangGraph support agent over the CS and IS handbooks. Three LLM-judge gates decide when to escalate to a human advisor, with restart-safe tickets and an advisor-controlled learning loop | 115 tests in CI; judges fail closed, so a broken judge sends the question to a human |
+| [**Mizan**](https://github.com/OmarAmir2001/mizan) | Corrective RAG assistant for Egyptian labor law in Arabic and English, with memory across sessions ([live demo](https://huggingface.co/spaces/OmarAmir2001/mizan)) | Answers cite the law articles they used; poor retrieval triggers a rewritten search |
+| [**GitHub Repository Q&A Agent**](https://github.com/OmarAmir2001/GitHub-Repository-Q-A-Agent) | Chat with any GitHub repo's docs using hybrid BM25 + vector search, pydantic-ai and Llama 3.3 70B | Search methods and agent answers evaluated in the notebook |
+| [**Churn Prediction API**](https://github.com/OmarAmir2001/mlops-practitioner) | XGBoost churn model served with FastAPI, packaged in Docker, with structured logging and tests | Returns churn probability plus a threshold-based decision |
 
-[![CI](https://github.com/OmarAmir2001/Customer_Support/actions/workflows/ci.yml/badge.svg)](https://github.com/OmarAmir2001/Customer_Support/actions/workflows/ci.yml)
+## Skills
 
-A support agent that answers student questions from the CS and IS department handbooks. When it can't answer confidently, it **escalates to a human advisor instead of guessing**. It also learns from the questions advisors resolve.
+**Languages & data**<br>
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![pandas](https://img.shields.io/badge/pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white)
+![XGBoost](https://img.shields.io/badge/XGBoost-EC6B23?style=for-the-badge)
 
-- **Three separate LLM-judge gates** (context relevance, faithfulness, answer relevance) decide when to escalate. The model is never asked to rate its own confidence. The judges **fail closed**: if a judge breaks, the question goes to a human.
-- **Tickets that survive a restart.** Escalating ends the agent run. The advisor answers hours later, and the answer goes back into the same conversation via `thread_id`. The ticket flow (`pending → under_review → resolved / rejected / closed / reopened`) has an audit trail and handles two advisors acting at once.
-- **A learning loop an advisor controls.** Resolved answers join the knowledge base only when an advisor chooses to add them. Handbook text always ranks first, and an answer that contradicts the handbook is held back for review.
-- **Built like a production service.** FastAPI, async SQLAlchemy, Alembic, Postgres and pgvector, Docker Compose, nginx, structlog with correlation IDs, and Prometheus and Grafana with custom metrics and 7 alert rules. **115 tests in CI.**
+**LLM, RAG & agents**<br>
+![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![RAG](https://img.shields.io/badge/RAG-6E40C9?style=for-the-badge)
+![LLM-as-judge](https://img.shields.io/badge/LLM--as--judge-6E40C9?style=for-the-badge)
+![pgvector](https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Chroma](https://img.shields.io/badge/Chroma-FF6446?style=for-the-badge)
+![Qdrant](https://img.shields.io/badge/Qdrant-DC244C?style=for-the-badge)
+![Groq](https://img.shields.io/badge/Groq-F55036?style=for-the-badge)
+![Cohere](https://img.shields.io/badge/Cohere-39594D?style=for-the-badge)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
-`LangGraph` `FastAPI` `pgvector` `PostgreSQL` `Groq` `Cohere` `Prometheus` `Grafana` `Docker` `uv`
+**ML & deep learning**<br>
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![Sentence Transformers](https://img.shields.io/badge/Sentence_Transformers-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 
----
+**Backend & MLOps**<br>
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![nginx](https://img.shields.io/badge/nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![uv](https://img.shields.io/badge/uv-DE5FE9?style=for-the-badge&logo=uv&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-### ⚖️ [Mizan: Egyptian Labor Law Assistant](https://github.com/OmarAmir2001/mizan)
+## Links
 
-🔗 **[Live demo on Hugging Face Spaces](https://huggingface.co/spaces/OmarAmir2001/mizan)**
-
-Mizan (ميزان, "balance" in Arabic) is a legal assistant that answers questions about Egyptian labor law in **Arabic and English**, and cites the articles it used.
-
-- **Corrective RAG loop.** It grades each retrieved chunk. If retrieval was poor, it rewrites the question into more precise legal wording and searches again, so answers are built only from relevant legal text.
-- **Arabic and English search** with `multilingual-e5-large` embeddings and automatic language detection.
-- **Memory across sessions.** Using LangGraph Store and Trustcall, it remembers each user's name, profession and preferences, and updates its own instructions for that user from their feedback.
-- Streams answers token by token, works with LangGraph Studio, and runs on Hugging Face Spaces.
-
-`LangGraph` `Groq · Llama 3.3 70B` `ChromaDB` `Sentence-Transformers` `Trustcall` `Gradio`
-
----
-
-## 🛠️ Tech stack
-
-- **LLM & agents:** LangGraph · LangChain · RAG / CRAG · LLM-as-judge · Trustcall · Groq · Cohere · Hugging Face
-- **Backend:** Python · FastAPI · Pydantic v2 · SQLAlchemy 2 (async) · Alembic · Gradio
-- **Data & vectors:** PostgreSQL · pgvector · ChromaDB · Qdrant
-- **MLOps & infra:** Docker Compose · nginx · Prometheus · Grafana · structlog · GitHub Actions · pytest · Locust · uv
-- **ML / DL:** PyTorch · TensorFlow · Keras · scikit-learn · NumPy · Pandas
-
----
-
-## 🎓 Background
-
-- **B.Sc. Computer Science & Software Engineering**, Culture and Science City (2020–2024), graduated with honors
-- **Certificates:** Deep Learning Specialization · Machine Learning Specialization · Mathematics for ML & Data Science · Data Analyst with Python
-- **Languages:** Arabic (native) · English (full professional) · German (professional working)
-
----
-
-<p align="center"><i>Open to AI / ML engineering roles. Get in touch on <a href="https://www.linkedin.com/in/omar-amir55">LinkedIn</a> or by <a href="mailto:omaramir2001@gmail.com">email</a>.</i></p>
+[Portfolio](https://omaramir2001.github.io) · [LinkedIn](https://www.linkedin.com/in/omar-amir55) · [Hugging Face](https://huggingface.co/OmarAmir2001) · [Publications (ORCID)](https://orcid.org/0009-0009-2696-5744)
