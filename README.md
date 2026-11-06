@@ -18,6 +18,7 @@ I build LLM agents that know when they're wrong. My work is agentic RAG systems 
 | [**Mizan**](https://github.com/OmarAmir2001/mizan) | Corrective RAG assistant for Egyptian labor law in Arabic and English, with memory across sessions ([live demo](https://huggingface.co/spaces/OmarAmir2001/mizan)) | Answers cite the law articles they used; poor retrieval triggers a rewritten search |
 | [**GitHub Repository Q&A Agent**](https://github.com/OmarAmir2001/GitHub-Repository-Q-A-Agent) | Chat with any GitHub repo's docs using hybrid BM25 + vector search, pydantic-ai and Llama 3.3 70B | Search methods and agent answers evaluated in the notebook |
 | [**Churn Prediction API**](https://github.com/OmarAmir2001/mlops-practitioner) | XGBoost churn model served with FastAPI, packaged in Docker, with structured logging and tests | Returns churn probability plus a threshold-based decision |
+| [**VISIONEER**](https://github.com/OmarAmir2001/VISIONEER_APP) | Stable Diffusion v1.5 fine-tuned with PEFT to generate 2D floor plans from text prompts, built with colleagues as our graduation project ([paper](https://doi.org/10.22630/MGV.2025.34.3.4)) | Published in Machine Graphics & Vision (2025) |
 
 ## Skills
 
@@ -60,6 +61,10 @@ I build LLM agents that know when they're wrong. My work is agentic RAG systems 
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 ![uv](https://img.shields.io/badge/uv-DE5FE9?style=for-the-badge&logo=uv&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+## Publications
+
+- A. Mostafa, **O. Amir**, A. M. Mohamed, M. O. Al Enany. [Fine-tuning stable diffusion for generating 2D floor plans using prompt templates](https://doi.org/10.22630/MGV.2025.34.3.4). *Machine Graphics & Vision*, 34(3), 77–95, 2025.
 
 ## Links
 
