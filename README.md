@@ -4,7 +4,7 @@
 
 I build LLM agents that know when they're wrong. My work is agentic RAG systems in production: retrieval you can trace, answers checked by separate judges, a human stepping in when the model isn't sure, and the monitoring you need to trust all of it.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-omar--amir-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/omar-amir-556746220)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-omar--amir-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/omar-amir55)
 [![Email](https://img.shields.io/badge/Email-omaramir2001%40gmail.com-D14836?logo=gmail&logoColor=white)](mailto:omaramir2001@gmail.com)
 [![Hugging Face](https://img.shields.io/badge/Hugging%20Face-OmarAmir2001-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/OmarAmir2001)
 
@@ -68,4 +68,4 @@ An Android app for creating and visualizing floor plans. With a colleague, I **f
 
 ---
 
-<p align="center"><i>Open to AI / ML engineering roles. Get in touch on <a href="https://www.linkedin.com/in/omar-amir-556746220">LinkedIn</a> or by <a href="mailto:omaramir2001@gmail.com">email</a>.</i></p>
+<p align="center"><i>Open to AI / ML engineering roles. Get in touch on <a href="https://www.linkedin.com/in/omar-amir55">LinkedIn</a> or by <a href="mailto:omaramir2001@gmail.com">email</a>.</i></p>
